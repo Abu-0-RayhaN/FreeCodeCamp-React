@@ -12,6 +12,7 @@ const ControlledInputs = () => {
     const name = e.target.name;
     const value = e.target.value;
     setPerson({ ...person, [name]: value });
+    console.log(person);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,8 +67,8 @@ const ControlledInputs = () => {
           return (
             <div key={id} className="item">
               <h4>{firstName}</h4>
-              <p>{email}</p>
-              <p>{age}</p>
+              <spane>{email}</spane>
+              <span>{age}</span>
             </div>
           );
         })}
